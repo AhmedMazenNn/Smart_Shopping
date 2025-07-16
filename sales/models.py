@@ -7,8 +7,7 @@ from django.core.validators import MinValueValidator
 from django.utils.translation import gettext_lazy as _
 
 from products.models import Product
-from customers.models import Customer
-from users.models import UserAccount
+from users.models import UserAccount , Customer
 from stores.models import Branch
 from . import constants
 from .utils import calculate_order_totals, calculate_return_total
