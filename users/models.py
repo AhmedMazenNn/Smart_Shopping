@@ -121,7 +121,6 @@ class UserAccountManager(BaseUserManager):
 class UserAccount(AbstractBaseUser, PermissionsMixin):
     user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(_('Email Address'), unique=True)
-    username = models.CharField(_('Username'), max_length=150, unique=True, blank=True, null=True)
     firebase_uid = models.CharField(max_length=128, unique=True, null=True, blank=True)
     first_name = models.CharField(_('First Name'), max_length=150, blank=True)
     last_name = models.CharField(_('Last Name'), max_length=150, blank=True)
