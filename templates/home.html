@@ -1,0 +1,49 @@
+{#"C:\Users\DELL\SER SQL MY APP\templates\home.html"#
+}
+{% load i18n %} {# هذا السطر مهم لتحميل علامات الترجمة #}
+<!DOCTYPE html>
+<html lang="{% get_current_language %}"> {# سيتم تعيين سمة اللغة تلقائيًا بواسطة Django #}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Welcome to Our Application" %}</title> {# نص قابل للترجمة #}
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; margin-top: 50px; direction: {% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}; } /* توجيه النص */
+        h1 { color: #333; }
+        .language-switcher { margin-top: 20px; }
+        .language-switcher form { display: inline-block; }
+        .language-switcher select, .language-switcher input[type="submit"] {
+            padding: 8px 12px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .language-switcher a { margin: 0 10px; text-decoration: none; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>{% trans "Welcome to Our Application" %}</h1>
+    <p>{% blocktrans %}This application supports multiple languages, including Arabic, English, Urdu, French, and Turkish. Please select your preferred language below.{% endblocktrans %}</p>
+    
+    <div class="language-switcher">
+        <h3>{% trans "Choose your language:" %}</h3>
+        
+        {# نموذج Django القياسي لتبديل اللغة #}
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.path }}">
+            <select name="language" onchange="this.form.submit()">
+                {% get_current_language as CURRENT_LANGUAGE %} {# الحصول على اللغة الحالية #}
+                {% get_language_info_list for LANGUAGES as LANGUAGES %} {# الحصول على قائمة بجميع اللغات #}
+                {% for lang in LANGUAGES %}
+                    <option value="{{ lang.code }}" {% if lang.code == CURRENT_LANGUAGE %}selected{% endif %}>
+                        {{ lang.name_local }} ({{ lang.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            {# زر الإرسال ليس ضروريًا إذا كان التبديل يتم بـ onchange="this.form.submit()" #}
+            {# <input type="submit" value="{% trans 'Go' %}"> #}
+        </form>
+    </div>
+</body>
+</html>

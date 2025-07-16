@@ -1,0 +1,1140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-08 23:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\customers\admin.py:48
+msgid "المستخدم"
+msgstr "المستخدم"
+
+#: .\customers\admin.py:57
+msgid "إجمالي السلة"
+msgstr "إجمالي السلة"
+
+#: .\customers\admin.py:117 .\customers\admin.py:124 .\customers\admin.py:126
+msgid "N/A"
+msgstr "غير متاح"
+
+#: .\customers\admin.py:118
+msgid "العميل"
+msgstr "العميل"
+
+#: .\customers\admin.py:125
+#: .\myenv\Lib\site-packages\django\forms\formsets.py:484
+#: .\myenv\Lib\site-packages\django\forms\formsets.py:491 .\sales\models.py:127
+#: .\sales\models.py:131 .\sales\models.py:304
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "طلب"
+
+#: .\customers\admin.py:125 .\sales\models.py:131
+msgid "Invoice"
+msgstr "فاتورة"
+
+#: .\customers\admin.py:127 .\customers\models.py:74
+#: .\integrations\models.py:134
+msgid "Related Order/Invoice"
+msgstr "الطلب/الفاتورة ذات الصلة"
+
+#: .\customers\models.py:18
+msgid "User Account"
+msgstr "حساب المستخدم"
+
+#: .\customers\models.py:19 .\stores\models.py:24 .\stores\models.py:66
+#: .\users\models.py:82
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: .\customers\models.py:25 .\customers\models.py:31
+msgid "Customer"
+msgstr "العميل"
+
+#: .\customers\models.py:26
+msgid "Customers"
+msgstr "العملاء"
+
+#: .\customers\models.py:32
+msgid "Session Key"
+msgstr "مفتاح الجلسة"
+
+#: .\customers\models.py:33 .\integrations\models.py:37
+#: .\integrations\models.py:195 .\products\models.py:19 .\products\models.py:72
+#: .\products\products\models.py:17 .\products\products\models.py:67
+#: .\stores\models.py:40 .\stores\models.py:84
+msgid "Created At"
+msgstr "تاريخ الإنشاء"
+
+#: .\customers\models.py:34 .\products\models.py:20 .\products\models.py:73
+#: .\products\products\models.py:18 .\products\products\models.py:68
+#: .\stores\models.py:41 .\stores\models.py:85
+msgid "Last Updated At"
+msgstr "تاريخ آخر تحديث"
+
+#: .\customers\models.py:35
+msgid "Is Active"
+msgstr "نشط"
+
+#: .\customers\models.py:38 .\customers\models.py:43
+msgid "Customer Cart"
+msgstr "عربة العميل"
+
+#: .\customers\models.py:39
+msgid "Customer Carts"
+msgstr "عربات العملاء"
+
+#: .\customers\models.py:43
+msgid "Guest"
+msgstr "ضيف"
+
+#: .\customers\models.py:54
+msgid "Cart"
+msgstr "عربة التسوق"
+
+#: .\customers\models.py:55 .\products\models.py:76
+#: .\products\products\models.py:71 .\sales\models.py:305
+msgid "Product"
+msgstr "المنتج"
+
+#: .\customers\models.py:56 .\sales\models.py:306
+msgid "Quantity"
+msgstr "الكمية"
+
+#: .\customers\models.py:57
+msgid "Added At"
+msgstr "تاريخ الإضافة"
+
+#: .\customers\models.py:60
+msgid "Customer Cart Item"
+msgstr "عنصر في عربة العميل"
+
+#: .\customers\models.py:61
+msgid "Customer Cart Items"
+msgstr "عناصر عربة العميل"
+
+#: .\customers\models.py:65
+msgid "in Cart"
+msgstr "في العربة"
+
+#: .\customers\models.py:71
+msgid "Reviewing Customer"
+msgstr "مراجعة العميل"
+
+#: .\customers\models.py:78
+msgid "Cashier Rating (1-5)"
+msgstr "تقييم أمين الصندوق (1-5)"
+
+#: .\customers\models.py:82
+msgid "Branch Rating (1-5)"
+msgstr "تقييم الفرع (1-5)"
+
+#: .\customers\models.py:86
+msgid "App Rating (1-5)"
+msgstr "تقييم التطبيق (1-5)"
+
+#: .\customers\models.py:88
+msgid "Additional Comments"
+msgstr "تعليقات إضافية"
+
+#: .\customers\models.py:89
+msgid "Submitted At"
+msgstr "تاريخ التقديم"
+
+#: .\customers\models.py:92
+msgid "Rating"
+msgstr "التقييم"
+
+#: .\customers\models.py:93
+msgid "Ratings"
+msgstr "التقييمات"
+
+#: .\customers\models.py:98
+msgid "No Order"
+msgstr "لا يوجد طلب"
+
+#: .\customers\models.py:99
+msgid "Rating for"
+msgstr "تقييم لـ"
+
+#: .\customers\models.py:99
+msgid "by"
+msgstr "بواسطة"
+
+#: .\customers\views.py:217
+msgid ""
+"Direct creation of ratings is not allowed. Ratings are created automatically "
+"for invoices. Please update an existing rating."
+msgstr ""
+"لا يُسمح بإنشاء التقييمات مباشرة. يتم إنشاء التقييمات تلقائيًا للفواتير. يرجى "
+"تحديث تقييم موجود."
+
+#: .\customers\views.py:230
+msgid "You do not have permission to update this rating."
+msgstr "ليس لديك إذن لتحديث هذا التقييم."
+
+#: .\customers\views.py:249
+msgid "You do not have permission to delete ratings."
+msgstr "ليس لديك إذن لحذف التقييمات."
+
+#: .\integrations\admin.py:23
+msgid "Timestamps"
+msgstr "الطوابع الزمنية"
+
+#: .\integrations\admin.py:44
+msgid "Message Preview"
+msgstr "معاينة الرسالة"
+
+#: .\integrations\models.py:14
+msgid "Configuration Name"
+msgstr "اسم التكوين"
+
+#: .\integrations\models.py:15 .\products\models.py:18
+#: .\products\products\models.py:16
+msgid "Description"
+msgstr "الوصف"
+
+#: .\integrations\models.py:16
+msgid "API Base URL"
+msgstr "عنوان URL الأساسي لواجهة برمجة التطبيقات (API)"
+
+#: .\integrations\models.py:17
+msgid "API Key (or Token)"
+msgstr "مفتاح API (أو الرمز المميز)"
+
+#: .\integrations\models.py:18
+msgid "Is Active Configuration"
+msgstr "تكوين نشط"
+
+#: .\integrations\models.py:32
+msgid "Accounting/Integration System Type"
+msgstr "نوع نظام المحاسبة/الدمج"
+
+#: .\integrations\models.py:36
+msgid "Last Synced At"
+msgstr "تاريخ آخر مزامنة"
+
+#: .\integrations\models.py:38 .\integrations\models.py:196
+msgid "Updated At"
+msgstr "تاريخ التحديث"
+
+#: .\integrations\models.py:41 .\integrations\models.py:52
+#: .\integrations\models.py:81
+msgid "Accounting System Configuration"
+msgstr "تكوين نظام المحاسبة"
+
+#: .\integrations\models.py:42
+msgid "Accounting System Configurations"
+msgstr "تكوينات نظام المحاسبة"
+
+#: .\integrations\models.py:54 .\integrations\models.py:97
+msgid "Sync Date"
+msgstr "تاريخ المزامنة"
+
+#: .\integrations\models.py:57 .\integrations\models.py:90
+msgid "Pending"
+msgstr "معلق"
+
+#: .\integrations\models.py:58 .\integrations\models.py:91
+msgid "Success"
+msgstr "نجاح"
+
+#: .\integrations\models.py:59 .\integrations\models.py:92
+msgid "Failed"
+msgstr "فشل"
+
+#: .\integrations\models.py:60
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#: .\integrations\models.py:62 .\integrations\models.py:95
+msgid "Sync Status"
+msgstr "حالة المزامنة"
+
+#: .\integrations\models.py:63 .\integrations\models.py:96
+msgid "Sync Message"
+msgstr "رسالة المزامنة"
+
+#: .\integrations\models.py:65
+msgid "Products Synced"
+msgstr "المنتجات التي تمت مزامنتها"
+
+#: .\integrations\models.py:66
+msgid "Errors Count"
+msgstr "عدد الأخطاء"
+
+#: .\integrations\models.py:69
+msgid "Product Sync Log"
+msgstr "سجل مزامنة المنتج"
+
+#: .\integrations\models.py:70
+msgid "Product Sync Logs"
+msgstr "سجلات مزامنة المنتج"
+
+#: .\integrations\models.py:87
+msgid "Related Order"
+msgstr "الطلب ذو الصلة"
+
+#: .\integrations\models.py:93
+msgid "Retried"
+msgstr "تمت إعادة المحاولة"
+
+#: .\integrations\models.py:98
+msgid "Accounting System Invoice ID"
+msgstr "معرف فاتورة نظام المحاسبة"
+
+#: .\integrations\models.py:104
+msgid "App Commission Rate (%)"
+msgstr "معدل عمولة التطبيق (%)"
+
+#: .\integrations\models.py:110
+msgid "Total Amount Before Commission"
+msgstr "المبلغ الإجمالي قبل العمولة"
+
+#: .\integrations\models.py:116
+msgid "Amount Sent to Accounting"
+msgstr "المبلغ المرسل إلى المحاسبة"
+
+#: .\integrations\models.py:120
+msgid "Sale Invoice Sync Log"
+msgstr "سجل مزامنة فاتورة البيع"
+
+#: .\integrations\models.py:121
+msgid "Sale Invoice Sync Logs"
+msgstr "سجلات مزامنة فاتورة البيع"
+
+#: .\integrations\models.py:140
+msgid "ZATCA UUID"
+msgstr "معرف UUID لـ ZATCA"
+
+#: .\integrations\models.py:146
+msgid "Invoice Hash"
+msgstr "تجزئة الفاتورة"
+
+#: .\integrations\models.py:151
+msgid "Cryptographic Stamp"
+msgstr "ختم تشفيري"
+
+#: .\integrations\models.py:156
+msgid "QR Code Data (Base64)"
+msgstr "بيانات رمز الاستجابة السريعة (Base64)"
+
+#: .\integrations\models.py:161
+msgid "Fatoora XML Content"
+msgstr "محتوى فاتورة XML"
+
+#: .\integrations\models.py:166
+msgid "Last ZATCA API Response"
+msgstr "آخر استجابة لواجهة برمجة تطبيقات ZATCA"
+
+#: .\integrations\models.py:171
+msgid "Last ZATCA Submission Date"
+msgstr "تاريخ آخر إرسال لـ ZATCA"
+
+#: .\integrations\models.py:175
+msgid "Pending Processing"
+msgstr "معالجة معلقة"
+
+#: .\integrations\models.py:176
+msgid "Accepted by ZATCA"
+msgstr "مقبول من قبل ZATCA"
+
+#: .\integrations\models.py:177
+msgid "Rejected by ZATCA"
+msgstr "مرفوض من قبل ZATCA"
+
+#: .\integrations\models.py:178
+msgid "Reported (Phase 1)"
+msgstr "تم الإبلاغ (المرحلة 1)"
+
+#: .\integrations\models.py:179
+msgid "Cleared (Phase 2)"
+msgstr "تمت التسوية (المرحلة 2)"
+
+#: .\integrations\models.py:180
+msgid "Failed ZATCA Validation"
+msgstr "فشل التحقق من ZATCA"
+
+#: .\integrations\models.py:181
+msgid "Unknown Status"
+msgstr "حالة غير معروفة"
+
+#: .\integrations\models.py:187
+msgid "ZATCA Processing Status"
+msgstr "حالة معالجة ZATCA"
+
+#: .\integrations\models.py:192
+msgid "ZATCA Error Message"
+msgstr "رسالة خطأ ZATCA"
+
+#: .\integrations\models.py:200
+msgid "ZATCA E-Invoice Detail"
+msgstr "تفاصيل الفاتورة الإلكترونية لـ ZATCA"
+
+#: .\integrations\models.py:201
+msgid "ZATCA E-Invoice Details"
+msgstr "تفاصيل الفاتورة الإلكترونية لـ ZATCA"
+
+#: .\integrations\serializers.py:57
+msgid "Application commission rate applied to this sale."
+msgstr "معدل عمولة التطبيق المطبق على هذه المبيعات."
+
+#: .\integrations\serializers.py:61
+msgid "Total amount of sale before applying application commission."
+msgstr "إجمالي مبلغ البيع قبل تطبيق عمولة التطبيق."
+
+#: .\integrations\serializers.py:65
+msgid "Final amount sent to accounting system after commission."
+msgstr "المبلغ النهائي المرسل إلى نظام المحاسبة بعد العمولة."
+
+#: .\integrations\tasks.py:33 .\integrations\tasks.py:129
+msgid "Error: Accounting system configuration not found or not active."
+msgstr "خطأ: لم يتم العثور على تكوين نظام المحاسبة أو أنه غير نشط."
+
+#: .\integrations\tasks.py:48
+msgid "Attempting to send invoice to accounting system via background task."
+msgstr "جاري محاولة إرسال الفاتورة إلى نظام المحاسبة عبر مهمة خلفية."
+
+#: .\integrations\tasks.py:56
+msgid "Re-attempting to send invoice to accounting system via background task."
+msgstr "جاري إعادة محاولة إرسال الفاتورة إلى نظام المحاسبة عبر مهمة خلفية."
+
+#: .\integrations\tasks.py:99
+msgid "Invoice sent successfully via background task."
+msgstr "تم إرسال الفاتورة بنجاح عبر مهمة خلفية."
+
+#: .\integrations\tasks.py:108
+msgid "Failed to send invoice to accounting system via background task: "
+msgstr "فشل إرسال الفاتورة إلى نظام المحاسبة عبر مهمة خلفية: "
+
+#: .\integrations\tasks.py:115
+msgid "An unexpected error occurred during invoice sync background task: "
+msgstr "حدث خطأ غير متوقع أثناء مهمة مزامنة الفاتورة الخلفية: "
+
+#: .\integrations\tasks.py:135
+msgid "Starting scheduled product sync from accounting system."
+msgstr "جاري بدء مزامنة المنتجات المجدولة من نظام المحاسبة."
+
+#: .\integrations\tasks.py:154
+msgid "No default branch found to assign products."
+msgstr "لم يتم العثور على فرع افتراضي لتعيين المنتجات."
+
+#: .\integrations\tasks.py:168
+msgid "Unnamed Product"
+msgstr "منتج غير مسمى"
+
+#: .\integrations\tasks.py:191
+msgid "Failed to sync products from accounting system: "
+msgstr "فشل مزامنة المنتجات من نظام المحاسبة: "
+
+#: .\integrations\tasks.py:198
+msgid "An unexpected error occurred during product sync: "
+msgstr "حدث خطأ غير متوقع أثناء مزامنة المنتج: "
+
+#: .\integrations\views.py:62
+msgid "Order not found."
+msgstr "الطلب غير موجود."
+
+#: .\integrations\views.py:66
+msgid "Accounting system configuration not found or not active."
+msgstr "لم يتم العثور على تكوين نظام المحاسبة أو أنه غير نشط."
+
+#: .\integrations\views.py:74
+msgid "Attempting to send invoice to accounting system."
+msgstr "جاري محاولة إرسال الفاتورة إلى نظام المحاسبة."
+
+#: .\integrations\views.py:125
+msgid "Invoice sent successfully."
+msgstr "تم إرسال الفاتورة بنجاح."
+
+#: .\integrations\views.py:137
+msgid "Invoice sent to accounting system successfully."
+msgstr "تم إرسال الفاتورة إلى نظام المحاسبة بنجاح."
+
+#: .\integrations\views.py:140
+msgid "Failed to send invoice to accounting system: "
+msgstr "فشل إرسال الفاتورة إلى نظام المحاسبة: "
+
+#: .\integrations\views.py:146
+msgid "An unexpected error occurred during invoice sync: "
+msgstr "حدث خطأ غير متوقع أثناء مزامنة الفاتورة: "
+
+#: .\myenv\Lib\site-packages\django\contrib\messages\apps.py:16
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr "الرسائل"
+
+#: .\myenv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "خرائط المواقع"
+
+#: .\myenv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "الملفات الثابتة"
+
+#: .\myenv\Lib\site-packages\django\contrib\syndication\apps.py:7
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "المزامنة"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\myenv\Lib\site-packages\django\core\paginator.py:30
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "..."
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:32
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr "رقم الصفحة هذا ليس عددًا صحيحًا"
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:33
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr "رقم الصفحة هذا أقل من 1"
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:34
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr "تلك الصفحة لا تحتوي على نتائج"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:22
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "أدخل قيمة صحيحة."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "أدخل اسم نطاق صحيح."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:153
+#: .\myenv\Lib\site-packages\django\forms\fields.py:775
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:752
+msgid "Enter a valid URL."
+msgstr "أدخل عنوان URL صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:200
+#: .\venv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid integer."
+msgstr "أدخل عددًا صحيحًا صالحًا."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:211
+#: .\venv\Lib\site-packages\django\core\validators.py:176
+msgid "Enter a valid email address."
+msgstr "أدخل عنوان بريد إلكتروني صحيحًا."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\myenv\Lib\site-packages\django\core\validators.py:289
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"أدخل «معرفًا» صالحًا يتكون من أحرف أو أرقام أو شرطات سفلية أو شرطات."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:297
+#: .\venv\Lib\site-packages\django\core\validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"أدخل «معرفًا» صالحًا يتكون من أحرف يونيكود أو أرقام أو شرطات سفلية أو شرطات."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:309
+#: .\myenv\Lib\site-packages\django\core\validators.py:318
+#: .\myenv\Lib\site-packages\django\core\validators.py:332
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "أدخل عنوان %(protocol)s صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "IPv4"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:320
+#: .\myenv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "IPv6"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 أو IPv6"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:375
+#: .\venv\Lib\site-packages\django\core\validators.py:353
+msgid "Enter only digits separated by commas."
+msgstr "أدخل أرقامًا فقط مفصولة بفواصل."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:381
+#: .\venv\Lib\site-packages\django\core\validators.py:359
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "تأكد من أن هذه القيمة هي %(limit_value)s (القيمة الحالية هي %(show_value)s)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:416
+#: .\venv\Lib\site-packages\django\core\validators.py:394
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "تأكد من أن هذه القيمة أقل من أو تساوي %(limit_value)s."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:425
+#: .\venv\Lib\site-packages\django\core\validators.py:403
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "تأكد من أن هذه القيمة أكبر من أو تساوي %(limit_value)s."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:434
+#: .\venv\Lib\site-packages\django\core\validators.py:412
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "تأكد من أن هذه القيمة هي مضاعف لحجم الخطوة %(limit_value)s."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"تأكد من أن هذه القيمة هي مضاعف لحجم الخطوة %(limit_value)s، بدءًا من %(offset)s، "
+"على سبيل المثال: %(offset)s، %(valid_value1)s، %(valid_value2)s، وهكذا."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:473
+#: .\venv\Lib\site-packages\django\core\validators.py:422
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "تأكد من أن هذه القيمة تحتوي على حرف واحد على الأقل (تحتوي على %(show_value)d)."
+msgstr[1] "تأكد من أن هذه القيمة تحتوي على حرفين على الأقل (تحتوي على %(show_value)d)."
+msgstr[2] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأقل (تحتوي على %(show_value)d)."
+msgstr[3] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأقل (تحتوي على %(show_value)d)."
+msgstr[4] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأقل (تحتوي على %(show_value)d)."
+msgstr[5] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأقل (تحتوي على %(show_value)d)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:491
+#: .\venv\Lib\site-packages\django\core\validators.py:440
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "تأكد من أن هذه القيمة تحتوي على حرف واحد على الأكثر (تحتوي على %(show_value)d)."
+msgstr[1] "تأكد من أن هذه القيمة تحتوي على حرفين على الأكثر (تحتوي على %(show_value)d)."
+msgstr[2] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأكثر (تحتوي على %(show_value)d)."
+msgstr[3] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأكثر (تحتوي على %(show_value)d)."
+msgstr[4] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأكثر (تحتوي على %(show_value)d)."
+msgstr[5] "تأكد من أن هذه القيمة تحتوي على %(limit_value)d أحرف على الأكثر (تحتوي على %(show_value)d)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:514
+#: .\myenv\Lib\site-packages\django\forms\fields.py:366
+#: .\myenv\Lib\site-packages\django\forms\fields.py:405
+#: .\venv\Lib\site-packages\django\core\validators.py:463
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr "أدخل رقمًا."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:516
+#: .\venv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "تأكد من أن هناك رقمًا واحدًا على الأكثر."
+msgstr[1] "تأكد من أن هناك رقمين على الأكثر."
+msgstr[2] "تأكد من أن هناك %(max)s أرقام على الأكثر."
+msgstr[3] "تأكد من أن هناك %(max)s أرقام على الأكثر."
+msgstr[4] "تأكد من أن هناك %(max)s أرقام على الأكثر."
+msgstr[5] "تأكد من أن هناك %(max)s أرقام على الأكثر."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:521
+#: .\venv\Lib\site-packages\django\core\validators.py:470
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "تأكد من أن هناك منزلة عشرية واحدة على الأكثر."
+msgstr[1] "تأكد من أن هناك منزلتين عشريتين على الأكثر."
+msgstr[2] "تأكد من أن هناك %(max)s منازل عشرية على الأكثر."
+msgstr[3] "تأكد من أن هناك %(max)s منازل عشرية على الأكثر."
+msgstr[4] "تأكد من أن هناك %(max)s منازل عشرية على الأكثر."
+msgstr[5] "تأكد من أن هناك %(max)s منازل عشرية على الأكثر."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:526
+#: .\venv\Lib\site-packages\django\core\validators.py:475
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] "تأكد من أن هناك رقمًا واحدًا على الأكثر قبل الفاصلة العشرية."
+msgstr[1] "تأكد من أن هناك رقمين على الأكثر قبل الفاصلة العشرية."
+msgstr[2] "تأكد من أن هناك %(max)s أرقام على الأكثر قبل الفاصلة العشرية."
+msgstr[3] "تأكد من أن هناك %(max)s أرقام على الأكثر قبل الفاصلة العشرية."
+msgstr[4] "تأكد من أن هناك %(max)s أرقام على الأكثر قبل الفاصلة العشرية."
+msgstr[5] "تأكد من أن هناك %(max)s أرقام على الأكثر قبل الفاصلة العشرية."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:597
+#: .\venv\Lib\site-packages\django\core\validators.py:546
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"امتداد الملف “%(extension)s” غير مسموح به. الامتدادات المسموح بها هي: "
+"%(allowed_extensions)s."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:659
+#: .\venv\Lib\site-packages\django\core\validators.py:607
+msgid "Null characters are not allowed."
+msgstr "الأحرف الخالية غير مسموح بها."
+
+#: .\myenv\Lib\site-packages\django\db\models\base.py:1600
+#: .\myenv\Lib\site-packages\django\forms\models.py:908
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+msgid "and"
+msgstr "و"
+
+#: .\myenv\Lib\site-packages\django\db\models\base.py:1602
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s مع %(field_labels)s هذا موجود بالفعل."
+
+#: .\myenv\Lib\site-packages\django\db\models\constraints.py:22
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "تم انتهاك القيد “%(name)s”."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "القيمة %(value)r ليست خيارًا صالحًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr "لا يمكن أن يكون هذا الحقل فارغًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:136
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr "لا يمكن أن يكون هذا الحقل فارغًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s مع %(field_label)s هذا موجود بالفعل."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"يجب أن يكون %(field_label)s فريدًا لـ %(date_field_label)s %(lookup_type)s."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "حقل من نوع: %(field_type)s"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "يجب أن تكون قيمة “%(value)s” إما True أو False."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "يجب أن تكون قيمة “%(value)s” إما True أو False أو None."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr "قيمة منطقية (إما True أو False)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "سلسلة نصية (حتى %(max_length)s)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr "سلسلة نصية (غير محدودة)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr "أعداد صحيحة مفصولة بفواصل"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be inYYYY-MM-DD "
+"format."
+msgstr ""
+"قيمة “%(value)s” بتنسيق تاريخ غير صالح. يجب أن تكون بتنسيق YYYY-MM-DD."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"قيمة “%(value)s” بتنسيق صحيح (YYYY-MM-DD) ولكنها تاريخ غير صالح."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr "تاريخ (بدون وقت)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be inYYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"قيمة “%(value)s” بتنسيق غير صالح. يجب أن تكون بتنسيق YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"قيمة “%(value)s” بتنسيق صحيح (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) ولكنها تاريخ/وقت "
+"غير صالح."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr "تاريخ (مع وقت)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "يجب أن تكون قيمة “%(value)s” رقمًا عشريًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+msgid "Decimal number"
+msgstr "رقم عشري"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"قيمة “%(value)s” بتنسيق غير صالح. يجب أن تكون بتنسيق [DD] "
+"[[HH:]MM:]ss[.uuuuuu]."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
+msgid "Duration"
+msgstr "المدة"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
+msgid "Email address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
+msgid "File path"
+msgstr "مسار الملف"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "يجب أن تكون قيمة “%(value)s” رقمًا عائمًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+msgid "Floating point number"
+msgstr "عدد عشري"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "يجب أن تكون قيمة “%(value)s” عددًا صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+msgid "Integer"
+msgstr "عدد صحيح"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr "عدد صحيح كبير (8 بايت)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Small integer"
+msgstr "عدد صحيح صغير"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
+msgid "IPv4 address"
+msgstr "عنوان IPv4"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
+msgid "IP address"
+msgstr "عنوان IP"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "يجب أن تكون قيمة “%(value)s” إما None أو True أو False."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr "قيمة منطقية (إما True أو False أو None)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
+msgid "Positive big integer"
+msgstr "عدد صحيح كبير موجب"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
+msgid "Positive integer"
+msgstr "عدد صحيح موجب"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
+msgid "Positive small integer"
+msgstr "عدد صحيح صغير موجب"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "معرف (حتى %(max_length)s)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
+msgid "Text"
+msgstr "نص"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"قيمة “%(value)s” بتنسيق غير صالح. يجب أن تكون بتنسيق HH:MM[:ss[.uuuuuu]]."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"قيمة “%(value)s” بتنسيق صحيح (HH:MM[:ss[.uuuuuu]]) ولكنها وقت غير صالح."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
+msgid "Time"
+msgstr "الوقت"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
+msgid "URL"
+msgstr "رابط"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
+msgid "Raw binary data"
+msgstr "بيانات ثنائية خام"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” ليس معرف UUID صالحًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+msgid "Universally unique identifier"
+msgstr "معرف فريد عالميًا"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\files.py:244
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr "ملف"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\files.py:420
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr "صورة"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\json.py:24
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "A JSON object"
+msgstr "كائن JSON"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\json.py:26
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr "يجب أن تكون القيمة بتنسيق JSON صالح."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(model)s المثيل مع %(field)s %(value)r ليس خيارًا صالحًا."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:981
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr "مفتاح خارجي (يتم تحديد النوع بواسطة الحقل المرتبط)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1275
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr "علاقة واحد لواحد"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1332
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "علاقة %(from)s بـ %(to)s"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1334
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "علاقات %(from)s بـ %(to)s"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1382
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr "علاقة متعددة لمتعدد"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\myenv\Lib\site-packages\django\forms\boundfield.py:185
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ":؟.!"
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:95
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr "هذا الحقل مطلوب."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:315
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr "أدخل عددًا صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:486
+#: .\myenv\Lib\site-packages\django\forms\fields.py:1267
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid date."
+msgstr "أدخل تاريخًا صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:509
+#: .\myenv\Lib\site-packages\django\forms\fields.py:1268
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1242
+msgid "Enter a valid time."
+msgstr "أدخل وقتًا صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:536
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr "أدخل تاريخًا/وقتًا صحيحًا."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:570
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr "أدخل مدة صحيحة."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:571
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "يجب أن يكون عدد الأيام بين {min_days} و {max_days}."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:640
+#: .\venv\Lib\site-packages\django\forms\fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "لم يتم إرسال أي ملف. تحقق من نوع الترميز في النموذج."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:641
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+msgid "No file was submitted."
+msgstr "لم يتم إرسال أي ملف."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:642
+#: .\venv\Lib\site-packages\django\forms\fields.py:623
+msgid "The submitted file is empty."
+msgstr "الملف المرسل فارغ."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:644
+#: .\venv\Lib\site-packages\django\forms\fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من حرف واحد (يحتوي على %(length)d)."
+msgstr[1] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من حرفين (يحتوي على %(length)d)."
+msgstr[2] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من %(max)d أحرف (يحتوي على %(length)d)."
+msgstr[3] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من %(max)d أحرف (يحتوي على %(length)d)."
+msgstr[4] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من %(max)d أحرف (يحتوي على %(length)d)."
+msgstr[5] "تأكد من أن اسم هذا الملف لا يحتوي على أكثر من %(max)d أحرف (يحتوي على %(length)d)."

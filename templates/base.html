@@ -1,0 +1,15 @@
+{# C:\Users\DELL\SER SQL MY APP\templates\base.html #}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> {# استخدم dir="rtl" للغة العربية #}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}مشروع Django{% endblock %}</title>
+    {# هنا يمكنك تضمين ملفات CSS أو Bootstrap إذا كنت تستخدمها #}
+</head>
+<body>
+    {% block content %}
+    {# المحتوى الخاص بكل صفحة سيظهر هنا #}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,1121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-08 23:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\customers\admin.py:48
+msgid "المستخدم"
+msgstr "Kullanıcı"
+
+#: .\customers\admin.py:57
+msgid "إجمالي السلة"
+msgstr "Sepet Toplamı"
+
+#: .\customers\admin.py:117 .\customers\admin.py:124 .\customers\admin.py:126
+msgid "N/A"
+msgstr "Yok"
+
+#: .\customers\admin.py:118
+msgid "العميل"
+msgstr "Müşteri"
+
+#: .\customers\admin.py:125
+#: .\myenv\Lib\site-packages\django\forms\formsets.py:484
+#: .\myenv\Lib\site-packages\django\forms\formsets.py:491 .\sales\models.py:127
+#: .\sales\models.py:131 .\sales\models.py:304
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "Sipariş"
+
+#: .\customers\admin.py:125 .\sales\models.py:131
+msgid "Invoice"
+msgstr "Fatura"
+
+#: .\customers\admin.py:127 .\customers\models.py:74
+#: .\integrations\models.py:134
+msgid "Related Order/Invoice"
+msgstr "İlgili Sipariş/Fatura"
+
+#: .\customers\models.py:18
+msgid "User Account"
+msgstr "Kullanıcı Hesabı"
+
+#: .\customers\models.py:19 .\stores\models.py:24 .\stores\models.py:66
+#: .\users\models.py:82
+msgid "Phone Number"
+msgstr "Telefon Numarası"
+
+#: .\customers\models.py:25 .\customers\models.py:31
+msgid "Customer"
+msgstr "Müşteri"
+
+#: .\customers\models.py:26
+msgid "Customers"
+msgstr "Müşteriler"
+
+#: .\customers\models.py:32
+msgid "Session Key"
+msgstr "Oturum Anahtarı"
+
+#: .\customers\models.py:33 .\integrations\models.py:37
+#: .\integrations\models.py:195 .\products\models.py:19 .\products\models.py:72
+#: .\products\products\models.py:17 .\products\products\models.py:67
+#: .\stores\models.py:40 .\stores\models.py:84
+msgid "Created At"
+msgstr "Oluşturulma Tarihi"
+
+#: .\customers\models.py:34 .\products\models.py:20 .\products\models.py:73
+#: .\products\products\models.py:18 .\products\products\models.py:68
+#: .\stores\models.py:41 .\stores\models.py:85
+msgid "Last Updated At"
+msgstr "Son Güncelleme Tarihi"
+
+#: .\customers\models.py:35
+msgid "Is Active"
+msgstr "Aktif mi"
+
+#: .\customers\models.py:38 .\customers\models.py:43
+msgid "Customer Cart"
+msgstr "Müşteri Sepeti"
+
+#: .\customers\models.py:39
+msgid "Customer Carts"
+msgstr "Müşteri Sepetleri"
+
+#: .\customers\models.py:43
+msgid "Guest"
+msgstr "Misafir"
+
+#: .\customers\models.py:54
+msgid "Cart"
+msgstr "Sepet"
+
+#: .\customers\models.py:55 .\products\models.py:76
+#: .\products\products\models.py:71 .\sales\models.py:305
+msgid "Product"
+msgstr "Ürün"
+
+#: .\customers\models.py:56 .\sales\models.py:306
+msgid "Quantity"
+msgstr "Miktar"
+
+#: .\customers\models.py:57
+msgid "Added At"
+msgstr "Ekleme Tarihi"
+
+#: .\customers\models.py:60
+msgid "Customer Cart Item"
+msgstr "Müşteri Sepet Öğesi"
+
+#: .\customers\models.py:61
+msgid "Customer Cart Items"
+msgstr "Müşteri Sepet Öğeleri"
+
+#: .\customers\models.py:65
+msgid "in Cart"
+msgstr "Sepette"
+
+#: .\customers\models.py:71
+msgid "Reviewing Customer"
+msgstr "İnceleyen Müşteri"
+
+#: .\customers\models.py:78
+msgid "Cashier Rating (1-5)"
+msgstr "Kasiyer Puanı (1-5)"
+
+#: .\customers\models.py:82
+msgid "Branch Rating (1-5)"
+msgstr "Şube Puanı (1-5)"
+
+#: .\customers\models.py:86
+msgid "App Rating (1-5)"
+msgstr "Uygulama Puanı (1-5)"
+
+#: .\customers\models.py:88
+msgid "Additional Comments"
+msgstr "Ek Yorumlar"
+
+#: .\customers\models.py:89
+msgid "Submitted At"
+msgstr "Gönderilme Tarihi"
+
+#: .\customers\models.py:92
+msgid "Rating"
+msgstr "Puan"
+
+#: .\customers\models.py:93
+msgid "Ratings"
+msgstr "Puanlar"
+
+#: .\customers\models.py:98
+msgid "No Order"
+msgstr "Sipariş Yok"
+
+#: .\customers\models.py:99
+msgid "Rating for"
+msgstr "İçin Puan"
+
+#: .\customers\models.py:99
+msgid "by"
+msgstr "tarafından"
+
+#: .\customers\views.py:217
+msgid ""
+"Direct creation of ratings is not allowed. Ratings are created automatically "
+"for invoices. Please update an existing rating."
+msgstr ""
+"Doğrudan puan oluşturmaya izin verilmez. Puanlar faturalar için otomatik olarak "
+"oluşturulur. Lütfen mevcut bir puanı güncelleyin."
+
+#: .\customers\views.py:230
+msgid "You do not have permission to update this rating."
+msgstr "Bu puanı güncelleme izniniz yok."
+
+#: .\customers\views.py:249
+msgid "You do not have permission to delete ratings."
+msgstr "Puanları silme izniniz yok."
+
+#: .\integrations\admin.py:23
+msgid "Timestamps"
+msgstr "Zaman Damgaları"
+
+#: .\integrations\admin.py:44
+msgid "Message Preview"
+msgstr "Mesaj Önizlemesi"
+
+#: .\integrations\models.py:14
+msgid "Configuration Name"
+msgstr "Yapılandırma Adı"
+
+#: .\integrations\models.py:15 .\products\models.py:18
+#: .\products\products\models.py:16
+msgid "Description"
+msgstr "Açıklama"
+
+#: .\integrations\models.py:16
+msgid "API Base URL"
+msgstr "API Temel URL'si"
+
+#: .\integrations\models.py:17
+msgid "API Key (or Token)"
+msgstr "API Anahtarı (veya Token)"
+
+#: .\integrations\models.py:18
+msgid "Is Active Configuration"
+msgstr "Aktif Yapılandırma mı"
+
+#: .\integrations\models.py:32
+msgid "Accounting/Integration System Type"
+msgstr "Muhasebe/Entegrasyon Sistemi Türü"
+
+#: .\integrations\models.py:36
+msgid "Last Synced At"
+msgstr "Son Senkronizasyon Tarihi"
+
+#: .\integrations\models.py:38 .\integrations\models.py:196
+msgid "Updated At"
+msgstr "Güncelleme Tarihi"
+
+#: .\integrations\models.py:41 .\integrations\models.py:52
+#: .\integrations\models.py:81
+msgid "Accounting System Configuration"
+msgstr "Muhasebe Sistemi Yapılandırması"
+
+#: .\integrations\models.py:42
+msgid "Accounting System Configurations"
+msgstr "Muhasebe Sistemi Yapılandırmaları"
+
+#: .\integrations\models.py:54 .\integrations\models.py:97
+msgid "Sync Date"
+msgstr "Senkronizasyon Tarihi"
+
+#: .\integrations\models.py:57 .\integrations\models.py:90
+msgid "Pending"
+msgstr "Beklemede"
+
+#: .\integrations\models.py:58 .\integrations\models.py:91
+msgid "Success"
+msgstr "Başarılı"
+
+#: .\integrations\models.py:59 .\integrations\models.py:92
+msgid "Failed"
+msgstr "Başarısız"
+
+#: .\integrations\models.py:60
+msgid "In Progress"
+msgstr "Devam Ediyor"
+
+#: .\integrations\models.py:62 .\integrations\models.py:95
+msgid "Sync Status"
+msgstr "Senkronizasyon Durumu"
+
+#: .\integrations\models.py:63 .\integrations\models.py:96
+msgid "Sync Message"
+msgstr "Senkronizasyon Mesajı"
+
+#: .\integrations\models.py:65
+msgid "Products Synced"
+msgstr "Senkronize Edilen Ürünler"
+
+#: .\integrations\models.py:66
+msgid "Errors Count"
+msgstr "Hata Sayısı"
+
+#: .\integrations\models.py:69
+msgid "Product Sync Log"
+msgstr "Ürün Senkronizasyon Kaydı"
+
+#: .\integrations\models.py:70
+msgid "Product Sync Logs"
+msgstr "Ürün Senkronizasyon Kayıtları"
+
+#: .\integrations\models.py:87
+msgid "Related Order"
+msgstr "İlgili Sipariş"
+
+#: .\integrations\models.py:93
+msgid "Retried"
+msgstr "Tekrar Denendi"
+
+#: .\integrations\models.py:98
+msgid "Accounting System Invoice ID"
+msgstr "Muhasebe Sistemi Fatura Kimliği"
+
+#: .\integrations\models.py:104
+msgid "App Commission Rate (%)"
+msgstr "Uygulama Komisyon Oranı (%)"
+
+#: .\integrations\models.py:110
+msgid "Total Amount Before Commission"
+msgstr "Komisyondan Önceki Toplam Tutar"
+
+#: .\integrations\models.py:116
+msgid "Amount Sent to Accounting"
+msgstr "Muhasebeye Gönderilen Tutar"
+
+#: .\integrations\models.py:120
+msgid "Sale Invoice Sync Log"
+msgstr "Satış Faturası Senkronizasyon Kaydı"
+
+#: .\integrations\models.py:121
+msgid "Sale Invoice Sync Logs"
+msgstr "Satış Faturası Senkronizasyon Kayıtları"
+
+#: .\integrations\models.py:140
+msgid "ZATCA UUID"
+msgstr "ZATCA UUID"
+
+#: .\integrations\models.py:146
+msgid "Invoice Hash"
+msgstr "Fatura Hash'i"
+
+#: .\integrations\models.py:151
+msgid "Cryptographic Stamp"
+msgstr "Kriptografik Damga"
+
+#: .\integrations\models.py:156
+msgid "QR Code Data (Base64)"
+msgstr "QR Kod Verisi (Base64)"
+
+#: .\integrations\models.py:161
+msgid "Fatoora XML Content"
+msgstr "Fatoora XML İçeriği"
+
+#: .\integrations\models.py:166
+msgid "Last ZATCA API Response"
+msgstr "Son ZATCA API Yanıtı"
+
+#: .\integrations\models.py:171
+msgid "Last ZATCA Submission Date"
+msgstr "Son ZATCA Gönderme Tarihi"
+
+#: .\integrations\models.py:175
+msgid "Pending Processing"
+msgstr "İşlem Beklemede"
+
+#: .\integrations\models.py:176
+msgid "Accepted by ZATCA"
+msgstr "ZATCA Tarafından Kabul Edildi"
+
+#: .\integrations\models.py:177
+msgid "Rejected by ZATCA"
+msgstr "ZATCA Tarafından Reddedildi"
+
+#: .\integrations\models.py:178
+msgid "Reported (Phase 1)"
+msgstr "Raporlandı (Faz 1)"
+
+#: .\integrations\models.py:179
+msgid "Cleared (Phase 2)"
+msgstr "Temizlendi (Faz 2)"
+
+#: .\integrations\models.py:180
+msgid "Failed ZATCA Validation"
+msgstr "ZATCA Doğrulaması Başarısız"
+
+#: .\integrations\models.py:181
+msgid "Unknown Status"
+msgstr "Bilinmeyen Durum"
+
+#: .\integrations\models.py:187
+msgid "ZATCA Processing Status"
+msgstr "ZATCA İşlem Durumu"
+
+#: .\integrations\models.py:192
+msgid "ZATCA Error Message"
+msgstr "ZATCA Hata Mesajı"
+
+#: .\integrations\models.py:200
+msgid "ZATCA E-Invoice Detail"
+msgstr "ZATCA E-Fatura Detayı"
+
+#: .\integrations\models.py:201
+msgid "ZATCA E-Invoice Details"
+msgstr "ZATCA E-Fatura Detayları"
+
+#: .\integrations\serializers.py:57
+msgid "Application commission rate applied to this sale."
+msgstr "Bu satışa uygulanan uygulama komisyon oranı."
+
+#: .\integrations\serializers.py:61
+msgid "Total amount of sale before applying application commission."
+msgstr "Uygulama komisyonu uygulanmadan önceki toplam satış tutarı."
+
+#: .\integrations\serializers.py:65
+msgid "Final amount sent to accounting system after commission."
+msgstr "Komisyondan sonra muhasebe sistemine gönderilen nihai tutar."
+
+#: .\integrations\tasks.py:33 .\integrations\tasks.py:129
+msgid "Error: Accounting system configuration not found or not active."
+msgstr "Hata: Muhasebe sistemi yapılandırması bulunamadı veya aktif değil."
+
+#: .\integrations\tasks.py:48
+msgid "Attempting to send invoice to accounting system via background task."
+msgstr "Faturayı arka plan göreviyle muhasebe sistemine göndermeye çalışılıyor."
+
+#: .\integrations\tasks.py:56
+msgid "Re-attempting to send invoice to accounting system via background task."
+msgstr "Faturayı arka plan göreviyle muhasebe sistemine yeniden göndermeye çalışılıyor."
+
+#: .\integrations\tasks.py:99
+msgid "Invoice sent successfully via background task."
+msgstr "Fatura arka plan göreviyle başarıyla gönderildi."
+
+#: .\integrations\tasks.py:108
+msgid "Failed to send invoice to accounting system via background task: "
+msgstr "Faturayı arka plan göreviyle muhasebe sistemine gönderme başarısız: "
+
+#: .\integrations\tasks.py:115
+msgid "An unexpected error occurred during invoice sync background task: "
+msgstr "Fatura senkronizasyon arka plan görevi sırasında beklenmeyen bir hata oluştu: "
+
+#: .\integrations\tasks.py:135
+msgid "Starting scheduled product sync from accounting system."
+msgstr "Muhasebe sisteminden planlanmış ürün senkronizasyonu başlatılıyor."
+
+#: .\integrations\tasks.py:154
+msgid "No default branch found to assign products."
+msgstr "Ürünleri atamak için varsayılan şube bulunamadı."
+
+#: .\integrations\tasks.py:168
+msgid "Unnamed Product"
+msgstr "Adlandırılmamış Ürün"
+
+#: .\integrations\tasks.py:191
+msgid "Failed to sync products from accounting system: "
+msgstr "Ürünleri muhasebe sisteminden senkronize etme başarısız: "
+
+#: .\integrations\tasks.py:198
+msgid "An unexpected error occurred during product sync: "
+msgstr "Ürün senkronizasyonu sırasında beklenmeyen bir hata oluştu: "
+
+#: .\integrations\views.py:62
+msgid "Order not found."
+msgstr "Sipariş bulunamadı."
+
+#: .\integrations\views.py:66
+msgid "Accounting system configuration not found or not active."
+msgstr "Muhasebe sistemi yapılandırması bulunamadı veya aktif değil."
+
+#: .\integrations\views.py:74
+msgid "Attempting to send invoice to accounting system."
+msgstr "Faturayı muhasebe sistemine göndermeye çalışılıyor."
+
+#: .\integrations\views.py:125
+msgid "Invoice sent successfully."
+msgstr "Fatura başarıyla gönderildi."
+
+#: .\integrations\views.py:137
+msgid "Invoice sent to accounting system successfully."
+msgstr "Fatura muhasebe sistemine başarıyla gönderildi."
+
+#: .\integrations\views.py:140
+msgid "Failed to send invoice to accounting system: "
+msgstr "Faturayı muhasebe sistemine gönderme başarısız: "
+
+#: .\integrations\views.py:146
+msgid "An unexpected error occurred during invoice sync: "
+msgstr "Fatura senkronizasyonu sırasında beklenmeyen bir hata oluştu: "
+
+#: .\myenv\Lib\site-packages\django\contrib\messages\apps.py:16
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: .\myenv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "Site Haritaları"
+
+#: .\myenv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "Statik Dosyalar"
+
+#: .\myenv\Lib\site-packages\django\contrib\syndication\apps.py:7
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "Sendikasyon"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\myenv\Lib\site-packages\django\core\paginator.py:30
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "..."
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:32
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr "Bu sayfa numarası bir tam sayı değil"
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:33
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr "Bu sayfa numarası 1'den küçük"
+
+#: .\myenv\Lib\site-packages\django\core\paginator.py:34
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr "Bu sayfa hiç sonuç içermiyor"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:22
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "Geçerli bir değer girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Geçerli bir alan adı girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:153
+#: .\myenv\Lib\site-packages\django\forms\fields.py:775
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:752
+msgid "Enter a valid URL."
+msgstr "Geçerli bir URL girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:200
+#: .\venv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid integer."
+msgstr "Geçerli bir tam sayı girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:211
+#: .\venv\Lib\site-packages\django\core\validators.py:176
+msgid "Enter a valid email address."
+msgstr "Geçerli bir e-posta adresi girin."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\myenv\Lib\site-packages\django\core\validators.py:289
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Harflerden, rakamlardan, alt çizgilerden veya kısa çizgilerden oluşan geçerli "
+"bir “slug” girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:297
+#: .\venv\Lib\site-packages\django\core\validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Unicode harflerden, rakamlardan, alt çizgilerden veya kısa çizgilerden oluşan "
+"geçerli bir “slug” girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:309
+#: .\myenv\Lib\site-packages\django\core\validators.py:318
+#: .\myenv\Lib\site-packages\django\core\validators.py:332
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Geçerli bir %(protocol)s adresi girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "IPv4"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:320
+#: .\myenv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "IPv6"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 veya IPv6"
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:375
+#: .\venv\Lib\site-packages\django\core\validators.py:353
+msgid "Enter only digits separated by commas."
+msgstr "Yalnızca virgüllerle ayrılmış rakamlar girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:381
+#: .\venv\Lib\site-packages\django\core\validators.py:359
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Bu değerin %(limit_value)s olduğundan emin olun (mevcut değer %(show_value)s)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:416
+#: .\venv\Lib\site-packages\django\core\validators.py:394
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Bu değerin %(limit_value)s'den küçük veya eşit olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:425
+#: .\venv\Lib\site-packages\django\core\validators.py:403
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Bu değerin %(limit_value)s'den büyük veya eşit olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:434
+#: .\venv\Lib\site-packages\django\core\validators.py:412
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Bu değerin adım boyutu %(limit_value)s'nin bir katı olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"Bu değerin, %(offset)s'den başlayarak %(limit_value)s adım boyutunun bir katı "
+"olduğundan emin olun, örneğin: %(offset)s, %(valid_value1)s, %(valid_value2)s, "
+"vb."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:473
+#: .\venv\Lib\site-packages\django\core\validators.py:422
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Bu değerin en az %(limit_value)d karakteri olduğundan emin olun (mevcut: %(show_value)d)."
+msgstr[1] "Bu değerin en az %(limit_value)d karakteri olduğundan emin olun (mevcut: %(show_value)d)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:491
+#: .\venv\Lib\site-packages\django\core\validators.py:440
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Bu değerin en fazla %(limit_value)d karakteri olduğundan emin olun (mevcut: %(show_value)d)."
+msgstr[1] "Bu değerin en fazla %(limit_value)d karakteri olduğundan emin olun (mevcut: %(show_value)d)."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:514
+#: .\myenv\Lib\site-packages\django\forms\fields.py:366
+#: .\myenv\Lib\site-packages\django\forms\fields.py:405
+#: .\venv\Lib\site-packages\django\core\validators.py:463
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr "Bir sayı girin."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:516
+#: .\venv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Toplamda en fazla %(max)s rakam olduğundan emin olun."
+msgstr[1] "Toplamda en fazla %(max)s rakam olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:521
+#: .\venv\Lib\site-packages\django\core\validators.py:470
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "En fazla %(max)s ondalık basamak olduğundan emin olun."
+msgstr[1] "En fazla %(max)s ondalık basamak olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:526
+#: .\venv\Lib\site-packages\django\core\validators.py:475
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] "Ondalık noktadan önce en fazla %(max)s rakam olduğundan emin olun."
+msgstr[1] "Ondalık noktadan önce en fazla %(max)s rakam olduğundan emin olun."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:597
+#: .\venv\Lib\site-packages\django\core\validators.py:546
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"“%(extension)s” dosya uzantısına izin verilmiyor. İzin verilen uzantılar: "
+"%(allowed_extensions)s."
+
+#: .\myenv\Lib\site-packages\django\core\validators.py:659
+#: .\venv\Lib\site-packages\django\core\validators.py:607
+msgid "Null characters are not allowed."
+msgstr "Null karakterlere izin verilmez."
+
+#: .\myenv\Lib\site-packages\django\db\models\base.py:1600
+#: .\myenv\Lib\site-packages\django\forms\models.py:908
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+msgid "and"
+msgstr "ve"
+
+#: .\myenv\Lib\site-packages\django\db\models\base.py:1602
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "Bu %(field_labels)s ile bir %(model_name)s zaten var."
+
+#: .\myenv\Lib\site-packages\django\db\models\constraints.py:22
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "“%(name)s” kısıtlaması ihlal edildi."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "%(value)r değeri geçerli bir seçenek değil."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr "Bu alan boş olamaz."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:136
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr "Bu alan boş bırakılamaz."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "Bu %(field_label)s ile bir %(model_name)s zaten var."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s, %(date_field_label)s %(lookup_type)s için benzersiz olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Alan tipi: %(field_type)s"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” değeri True veya False olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” değeri True, False veya None olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (True veya False)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Dize (%(max_length)s karaktere kadar)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr "Dize (sınırsız)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr "Virgülle ayrılmış tam sayılar"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be inYYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” değeri geçersiz bir tarih biçimine sahip. YYYY-AA-GG biçiminde "
+"olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” değeri doğru biçimde (YYYY-AA-GG) ancak geçersiz bir tarihtir."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr "Tarih (saatsiz)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be inYYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” değeri geçersiz bir biçime sahip. YYYY-AA-GG HH:DD[:ss[.uuuuuu]][TZ] "
+"biçiminde olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” değeri doğru biçimde (YYYY-AA-GG HH:DD[:ss[.uuuuuu]][TZ]) ancak "
+"geçersiz bir tarih/saat bilgisidir."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr "Tarih (saatli)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” değeri bir ondalık sayı olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+msgid "Decimal number"
+msgstr "Ondalık sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"“%(value)s” değeri geçersiz bir biçime sahip. [GG] [[SS:]DD:]ss[.uuuuuu] "
+"biçiminde olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
+msgid "Duration"
+msgstr "Süre"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
+msgid "Email address"
+msgstr "E-posta adresi"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
+msgid "File path"
+msgstr "Dosya yolu"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” değeri bir ondalık sayı olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+msgid "Floating point number"
+msgstr "Ondalık noktalı sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” değeri bir tam sayı olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+msgid "Integer"
+msgstr "Tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr "Büyük (8 bayt) tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Small integer"
+msgstr "Küçük tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
+msgid "IPv4 address"
+msgstr "IPv4 adresi"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
+msgid "IP address"
+msgstr "IP adresi"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” değeri None, True veya False olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (True, False veya None)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
+msgid "Positive big integer"
+msgstr "Pozitif büyük tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
+msgid "Positive integer"
+msgstr "Pozitif tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
+msgid "Positive small integer"
+msgstr "Pozitif küçük tam sayı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (%(max_length)s karaktere kadar)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
+msgid "Text"
+msgstr "Metin"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” değeri geçersiz bir biçime sahip. SS:DD[:ss[.uuuuuu]] biçiminde "
+"olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” değeri doğru biçimde (SS:DD[:ss[.uuuuuu]]) ancak geçersiz bir "
+"saat bilgisidir."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
+msgid "Time"
+msgstr "Saat"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
+msgid "URL"
+msgstr "URL"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
+msgid "Raw binary data"
+msgstr "Ham ikili veri"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” geçerli bir UUID değil."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+msgid "Universally unique identifier"
+msgstr "Evrensel benzersiz tanımlayıcı"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\files.py:244
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr "Dosya"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\files.py:420
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr "Resim"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\json.py:24
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "A JSON object"
+msgstr "Bir JSON nesnesi"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\json.py:26
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr "Değer geçerli bir JSON olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(field)s %(value)r değerine sahip %(model)s örneği geçerli bir seçenek değil."
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:981
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr "Yabancı Anahtar (türü ilgili alan tarafından belirlenir)"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1275
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr "Birebir ilişki"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1332
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s ilişkisi"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1334
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s ilişkileri"
+
+#: .\myenv\Lib\site-packages\django\db\models\fields\related.py:1382
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr "Çoka çok ilişki"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\myenv\Lib\site-packages\django\forms\boundfield.py:185
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:95
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr "Bu alan zorunludur."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:315
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr "Tam sayı girin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:486
+#: .\myenv\Lib\site-packages\django\forms\fields.py:1267
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid date."
+msgstr "Geçerli bir tarih girin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:509
+#: .\myenv\Lib\site-packages\django\forms\fields.py:1268
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1242
+msgid "Enter a valid time."
+msgstr "Geçerli bir saat girin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:536
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr "Geçerli bir tarih/saat girin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:570
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr "Geçerli bir süre girin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:571
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Gün sayısı {min_days} ile {max_days} arasında olmalıdır."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:640
+#: .\venv\Lib\site-packages\django\forms\fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Hiçbir dosya gönderilmedi. Formdaki kodlama türünü kontrol edin."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:641
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+msgid "No file was submitted."
+msgstr "Hiçbir dosya gönderilmedi."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:642
+#: .\venv\Lib\site-packages\django\forms\fields.py:623
+msgid "The submitted file is empty."
+msgstr "Gönderilen dosya boş."
+
+#: .\myenv\Lib\site-packages\django\forms\fields.py:644
+#: .\venv\Lib\site-packages\django\forms\fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Bu dosya adının en fazla %(max)d karaktere sahip olduğundan emin olun (mevcut: %(length)d)."
+msgstr[1] "Bu dosya adının en fazla %(max)d karaktere sahip olduğundan emin olun (mevcut: %(length)d)."

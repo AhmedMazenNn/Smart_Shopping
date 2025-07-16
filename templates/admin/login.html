@@ -1,0 +1,59 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/login.css" %}">{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+        <div class="form-row">
+            {{ form.username.errors }}
+            <label for="{{ form.username.id_for_label }}" class="required">{% translate 'Email (Username)' %}:</label>
+            {{ form.username }}
+        </div>
+        <div class="form-row">
+            {{ form.password.errors }}
+            <label for="{{ form.password.id_for_label }}" class="required">{% translate 'Password' %}:</label>
+            <div style="position: relative;">
+                <input type="password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}" required style="width: calc(100% - 30px); padding-right: 30px;">
+                <span id="togglePassword" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); cursor: pointer; user-select: none;">
+                    👁️ <!-- Eye icon emoji, adjust as needed or use Font Awesome -->
+                </span>
+            </div>
+            <input type="hidden" name="next" value="{{ next }}">
+        </div>
+        {% url 'admin_password_reset' as password_reset_url %}
+        <div class="password-reset-link">
+            <a href="{{ password_reset_url }}">{% translate 'Forgotten your password or username?' %}</a>
+        </div>
+        <div class="submit-row">
+            <input type="submit" value="{% translate 'Log in' %}">
+        </div>
+        {{ form.non_field_errors }}
+    </form>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const passwordInput = document.getElementById('{{ form.password.id_for_label }}');
+        const togglePassword = document.getElementById('togglePassword');
+
+        if (passwordInput && togglePassword) {
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                this.textContent = type === 'password' ? '👁️' : '🔒'; // Change icon based on visibility
+            });
+        }
+    });
+</script>
+{% endblock %}
