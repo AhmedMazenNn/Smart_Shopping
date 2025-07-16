@@ -19,11 +19,12 @@ class AccountingSystemConfig(models.Model):
     is_active = models.BooleanField(default=False, verbose_name=_("Is Active Configuration"))
 
     system_type = models.CharField(
-        max_length=50,
-        choices=constants.SYSTEM_TYPE_CHOICES,
-        default='ZATCA_EINV',
-        verbose_name=_("Accounting/Integration System Type")
+    max_length=50,
+    choices=constants.SystemType.choices,
+    default=constants.SystemType.ZATCA_EINV,
+    verbose_name=_("Accounting/Integration System Type")
     )
+
 
     last_synced_at = models.DateTimeField(null=True, blank=True, verbose_name=_("Last Synced At"))
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Created At"))
@@ -47,11 +48,12 @@ class ProductSyncLog(models.Model):
     sync_date = models.DateTimeField(auto_now_add=True, verbose_name=_("Sync Date"))
 
     status = models.CharField(
-        max_length=15,
-        choices=constants.SYNC_STATUS_CHOICES,
-        default='PENDING',
-        verbose_name=_("Sync Status")
+    max_length=15,
+    choices=constants.SyncStatus.choices,
+    default=constants.SyncStatus.PENDING,
+    verbose_name=_("Sync Status")
     )
+
     message = models.TextField(blank=True, null=True, verbose_name=_("Sync Message"))
 
     products_synced = models.PositiveIntegerField(default=0, verbose_name=_("Products Synced"))
@@ -80,11 +82,12 @@ class SaleInvoiceSyncLog(models.Model):
         verbose_name=_("Related Order")
     )
     status = models.CharField(
-        max_length=10,
-        choices=constants.SYNC_STATUS_CHOICES,
-        default='PENDING',
-        verbose_name=_("Sync Status")
+    max_length=10,
+    choices=constants.SyncStatus.choices,
+    default=constants.SyncStatus.PENDING,
+    verbose_name=_("Sync Status")
     )
+
     message = models.TextField(blank=True, null=True, verbose_name=_("Sync Message"))
     sync_date = models.DateTimeField(auto_now_add=True, verbose_name=_("Sync Date"))
     accounting_invoice_id = models.CharField(max_length=255, blank=True, null=True, verbose_name=_("Accounting System Invoice ID"))
@@ -138,11 +141,12 @@ class ZatcaInvoice(models.Model):
     last_submission_date = models.DateTimeField(null=True, blank=True, verbose_name=_("Last ZATCA Submission Date"))
 
     processing_status = models.CharField(
-        max_length=20,
-        choices=constants.ZATCA_PROCESSING_STATUS_CHOICES,
-        default='PENDING',
-        verbose_name=_("ZATCA Processing Status")
+    max_length=20,
+    choices=constants.ZatcaProcessingStatus.choices,
+    default=constants.ZatcaProcessingStatus.PENDING,
+    verbose_name=_("ZATCA Processing Status")
     )
+
     error_message = models.TextField(null=True, blank=True, verbose_name=_("ZATCA Error Message"))
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Created At"))
