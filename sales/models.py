@@ -56,8 +56,6 @@ class TempOrderItem(models.Model):
 
 # === MAIN ORDER ===
 class Order(models.Model):
-
-    # order_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
     branch = models.ForeignKey(Branch, on_delete=models.PROTECT)
     status = models.CharField(max_length=30, choices=OrderStatus.choices, default=OrderStatus.PENDING_PAYMENT)
@@ -127,7 +125,6 @@ class Payment(models.Model):
 # === RETURN ===
 class Return(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='returns')
-    return_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     return_date = models.DateTimeField(auto_now_add=True)
     total_returned_amount = models.DecimalField(max_digits=10, decimal_places=2, default=Decimal("0.00"))
     reason = models.TextField(blank=True, null=True)
