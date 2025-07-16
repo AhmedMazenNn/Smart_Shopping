@@ -2,7 +2,7 @@
 import secrets, string
 
 def generate_temporary_password(length=12):
-    """توليد كلمة مرور مؤقتة آمنة."""
+
     characters = string.ascii_letters + string.digits + string.punctuation
     password = [
         secrets.choice(string.ascii_uppercase),
