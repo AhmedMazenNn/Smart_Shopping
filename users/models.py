@@ -6,6 +6,7 @@ from django.db.models import Q
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
+from decimal import Decimal
 
 from .constants import UserType
 from .utils import generate_temporary_password
@@ -174,3 +175,164 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     def is_shelf_organizer_user(self): return self.role and self.role.role_name == UserType.SHELF_ORGANIZER.value
     def is_customer_service_user(self): return self.role and self.role.role_name == UserType.CUSTOMER_SERVICE.value
     def is_platform_customer(self): return self.role and self.role.role_name == UserType.PLATFORM_CUSTOMER.value
+
+
+class Customer(models.Model):
+    customer_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user_account = models.OneToOneField(
+        'UserAccount',
+        on_delete=models.CASCADE,
+        related_name='customer_profile',
+        verbose_name=_('User Account')
+    )
+    phone_number = models.CharField(_('Phone Number'), max_length=20, blank=True, null=True)
+    address = models.TextField(_('Address'), blank=True, null=True)
+    credit_balance = models.DecimalField(
+        _("Credit Balance"),
+        max_digits=10,
+        decimal_places=2,
+        default=Decimal('0.00'),
+        validators=[MinValueValidator(Decimal('0.00'))]
+    )
+    store = models.ForeignKey(
+        'stores.Store',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='customers',
+        verbose_name=_('Preferred Store')
+    )
+
+    class Meta:
+        verbose_name = _('Customer Profile')
+        verbose_name_plural = _('Customer Profiles')
+
+    def __str__(self):
+        return self.user_account.email
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
+
+class Employee(models.Model):
+    employee_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user_account = models.OneToOneField(
+        'UserAccount',
+        on_delete=models.CASCADE,
+        related_name='employee_profile',
+        verbose_name=_('User Account')
+    )
+    job_title = models.CharField(_('Job Title'), max_length=100, blank=True, null=True,
+                                 help_text=_("Specific job title for this employee (e.g., 'Cashier', 'Branch Manager')."))
+    store = models.ForeignKey(
+        'stores.Store',
+        on_delete=models.SET_NULL, null=True, blank=True,
+        related_name='employees',
+        verbose_name=_('Associated Store')
+    )
+    branch = models.ForeignKey(
+        'stores.Branch',
+        on_delete=models.SET_NULL, null=True, blank=True,
+        related_name='employees',
+        verbose_name=_('Associated Branch')
+    )
+    department = models.ForeignKey(
+        'products.Department',
+        on_delete=models.SET_NULL, null=True, blank=True,
+        related_name='employees',
+        verbose_name=_('Associated Department')
+    )
+    phone_number = models.CharField(_('Phone Number'), max_length=20, blank=True, null=True)
+    tax_id = models.CharField(_('Tax ID (VAT/TRN/SSN)'), max_length=50, blank=True, null=True)
+    commission_percentage = models.DecimalField(
+        max_digits=5,
+        decimal_places=2,
+        default=Decimal('0.00'),
+        validators=[MinValueValidator(Decimal('0.00')), MaxValueValidator(Decimal('100.00'))],
+        help_text=_("Commission percentage for sales (e.g., for cashiers)"),
+        verbose_name=_("Commission Percentage (%)")
+    )
+
+    class Meta:
+        verbose_name = _('Employee')
+        verbose_name_plural = _('Employees')
+
+    def __str__(self):
+        return f"Employee: {self.user_account.email} ({self.job_title if self.job_title else 'N/A'})"
+
+def clean(self):
+    super().clean()
+    
+    if not self.user_account:
+        raise ValidationError(_("Employee must be linked to a User Account."))
+
+    role_name = self.user_account.role.role_name if self.user_account.role else None
+
+    # Roles that are NOT allowed to have an Employee profile
+    non_employee_roles = [
+        UserType.PLATFORM_CUSTOMER.value,
+        UserType.APP_OWNER.value,
+        UserType.PROJECT_MANAGER.value,
+        UserType.APP_STAFF.value,
+        UserType.STORE_ACCOUNT.value,
+    ]
+    if role_name in non_employee_roles:
+        raise ValidationError(
+            _("A user with the role '%(role)s' cannot have an Employee profile."),
+            params={'role': role_name}
+        )
+
+    # Validate job_title is required for certain roles
+    roles_requiring_job_title = [
+        UserType.CASHIER.value,
+        UserType.BRANCH_MANAGER.value,
+        UserType.STORE_MANAGER.value,
+        UserType.SHELF_ORGANIZER.value,
+        UserType.GENERAL_STAFF.value,
+        UserType.CUSTOMER_SERVICE.value,
+    ]
+    if role_name in roles_requiring_job_title and not self.job_title:
+        raise ValidationError(_("Job title is required for the role '%(role)s'."), params={'role': role_name})
+
+    # Validate that store is set for roles that need it
+    roles_requiring_store = [
+        UserType.CASHIER.value,
+        UserType.BRANCH_MANAGER.value,
+        UserType.STORE_MANAGER.value,
+        UserType.SHELF_ORGANIZER.value,
+        UserType.GENERAL_STAFF.value,
+        UserType.CUSTOMER_SERVICE.value,
+    ]
+    if role_name in roles_requiring_store and not self.store:
+        raise ValidationError(_("Store must be assigned for the role '%(role)s'."), params={'role': role_name})
+
+    # Validate that branch is required for branch-related roles
+    roles_requiring_branch = [
+        UserType.BRANCH_MANAGER.value,
+        UserType.CASHIER.value,
+        UserType.SHELF_ORGANIZER.value,
+        UserType.GENERAL_STAFF.value,
+        UserType.CUSTOMER_SERVICE.value,
+    ]
+    if role_name in roles_requiring_branch and not self.branch:
+        raise ValidationError(_("Branch must be assigned for the role '%(role)s'."), params={'role': role_name})
+
+    # Validate that department is required for certain roles
+    roles_requiring_department = [
+        UserType.CASHIER.value,
+        UserType.SHELF_ORGANIZER.value,
+        UserType.GENERAL_STAFF.value,
+        UserType.CUSTOMER_SERVICE.value,
+    ]
+    if role_name in roles_requiring_department and not self.department:
+        raise ValidationError(_("Department must be assigned for the role '%(role)s'."), params={'role': role_name})
+
+    # Validate commission percentage bounds (already handled by validators, but double-check)
+    if self.commission_percentage < 0 or self.commission_percentage > 100:
+        raise ValidationError(_("Commission percentage must be between 0 and 100."))
+
+
+
+def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
