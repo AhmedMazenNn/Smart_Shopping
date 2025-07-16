@@ -9,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 from products.models import Product
 from users.models import UserAccount , Customer
 from stores.models import Branch
-from . import constants
+from .constants import OrderStatus , PaymentMethod ,RefundMethod , ZatcaSubmissionStatus
 from .utils import calculate_order_totals, calculate_return_total
 
 
@@ -56,18 +56,11 @@ class TempOrderItem(models.Model):
 
 # === MAIN ORDER ===
 class Order(models.Model):
-    class OrderStatus(models.TextChoices):
-        DRAFT = 'draft', _("Draft")
-        PAID = 'paid', _("Paid")
-        COMPLETED = 'completed', _("Completed")
-        RETURNED = 'returned', _("Returned")
-        PARTIALLY_RETURNED = 'partially_returned', _("Partially Returned")
-        CANCELLED = 'cancelled', _("Cancelled")
 
     order_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
     branch = models.ForeignKey(Branch, on_delete=models.PROTECT)
-    status = models.CharField(max_length=30, choices=OrderStatus.choices, default=OrderStatus.DRAFT)
+    status = models.CharField(max_length=30, choices=OrderStatus.choices, default=OrderStatus.PENDING_PAYMENT)
     performed_by = models.ForeignKey(UserAccount, on_delete=models.SET_NULL, null=True, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
@@ -114,13 +107,6 @@ class Payment(models.Model):
     )
     payment_date = models.DateTimeField(auto_now_add=True)
 
-    class PaymentMethod(models.TextChoices):
-        CASH = 'cash', _('Cash')
-        ELECTRONIC = 'electronic', _('Electronic Payment')
-        CREDIT_BALANCE = 'credit_balance', _('Credit Balance')
-        CHEQUE = 'cheque', _('Cheque')
-        OTHER = 'other', _('Other')
-
     method = models.CharField(max_length=20, choices=PaymentMethod.choices, default=PaymentMethod.CASH)
     transaction_id = models.CharField(max_length=255, blank=True, null=True)
     received_by = models.ForeignKey(
@@ -150,10 +136,9 @@ class Return(models.Model):
         null=True, blank=True, related_name='processed_returns'
     )
     refund_method = models.CharField(
-        max_length=20, choices=constants.REFUND_METHOD_CHOICES,
-        default='CASH', verbose_name=_("Refund Method")
+    max_length=20, choices=RefundMethod.choices,
+    default=RefundMethod.CASH, verbose_name=_("Refund Method")
     )
-    refund_transaction_id = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         verbose_name = _("Return")
