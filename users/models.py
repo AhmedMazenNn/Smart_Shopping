@@ -4,31 +4,13 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseU
 from django.utils.translation import gettext_lazy as _
 from django.db.models import Q
 from django.core.exceptions import ValidationError
-# from decimal import Decimal
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
-from enum import Enum
 
+from .constants import UserType
 from .utils import generate_temporary_password
 from .firebase_services import create_firebase_user, update_firebase_user, get_existing_firebase_user_uid
 
-# تعريف UserType كتعداد (Enum)
-class UserType(Enum):
-    APP_OWNER = 'app_owner'
-    PROJECT_MANAGER = 'project_manager'
-    APP_STAFF = 'app_staff'
-    STORE_ACCOUNT = 'store_account'
-    STORE_MANAGER = 'store_manager'
-    BRANCH_MANAGER = 'branch_manager'
-    GENERAL_STAFF = 'general_staff'
-    CASHIER = 'cashier'
-    SHELF_ORGANIZER = 'shelf_organizer'
-    CUSTOMER_SERVICE = 'customer_service'
-    PLATFORM_CUSTOMER = 'platform_customer'
-
-    @classmethod
-    def choices(cls):
-        return [(key.value, key.name.replace('_', ' ').title()) for key in cls]
 
 class Role(models.Model):
     role_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -47,6 +29,7 @@ class Role(models.Model):
     def __str__(self):
         return self.role_name
 
+
 class UserAccountManager(BaseUserManager):
     def _create_user(self, email, password, **extra_fields):
         if not email:
@@ -58,7 +41,7 @@ class UserAccountManager(BaseUserManager):
             try:
                 role = Role.objects.get(role_name=UserType.PLATFORM_CUSTOMER.value)
             except Role.DoesNotExist:
-                raise ValueError(_("A default 'platform_customer' role must exist in the database or a role must be provided."))
+                raise ValueError(_("A default 'platform_customer' role must exist."))
 
         username = extra_fields.get('username')
         if not username or username.strip() == '':
@@ -77,7 +60,7 @@ class UserAccountManager(BaseUserManager):
         is_temp_password_generated = False
         temp_password = None
 
-        if password is None or password == '':
+        if not password:
             temp_password = generate_temporary_password()
             user.set_password(temp_password)
             user.is_temporary_password = True
@@ -130,18 +113,19 @@ class UserAccountManager(BaseUserManager):
             extra_fields['role'] = Role.objects.get(role_name=UserType.APP_OWNER.value)
         except Role.DoesNotExist:
             raise ValueError(_("Default 'app_owner' role not found."))
-        if password is None:
+        if not password:
             raise ValueError(_('Superuser must have a password set.'))
         return self._create_user(email, password, **extra_fields)
 
+
 class UserAccount(AbstractBaseUser, PermissionsMixin):
-    user_id = models.UUIDField(primary_key=True, default= uuid.uuid4, editable=False)
+    user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(_('Email Address'), unique=True)
     username = models.CharField(_('Username'), max_length=150, unique=True, blank=True, null=True)
     firebase_uid = models.CharField(max_length=128, unique=True, null=True, blank=True)
     first_name = models.CharField(_('First Name'), max_length=150, blank=True)
     last_name = models.CharField(_('Last Name'), max_length=150, blank=True)
-    role = models.ForeignKey('Role', on_delete=models.SET_NULL, null=True, related_name='user_accounts')
+    role = models.ForeignKey(Role, on_delete=models.SET_NULL, null=True, related_name='user_accounts')
     created_by = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True, related_name='created_users')
     is_active = models.BooleanField(_('Active'), default=True)
     is_staff = models.BooleanField(_('Staff Status'), default=False)
