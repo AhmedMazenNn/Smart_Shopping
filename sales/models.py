@@ -57,7 +57,7 @@ class TempOrderItem(models.Model):
 # === MAIN ORDER ===
 class Order(models.Model):
 
-    order_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
+    # order_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
     branch = models.ForeignKey(Branch, on_delete=models.PROTECT)
     status = models.CharField(max_length=30, choices=OrderStatus.choices, default=OrderStatus.PENDING_PAYMENT)
