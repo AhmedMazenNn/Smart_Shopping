@@ -1,5 +1,3 @@
-# C:\Users\DELL\SER SQL MY APP\users\apps.py
-
 from django.apps import AppConfig
 import logging
 
@@ -10,8 +8,7 @@ class UsersConfig(AppConfig):
     name = 'users'
 
     def ready(self):
-        # استيراد ملف تهيئة Firebase لضمان تشغيله عند بدء تشغيل التطبيق
-        # هذا يضمن تهيئة Firebase Admin SDK بمجرد أن تكون تطبيقات Django جاهزة
+        # Import Firebase initialization to ensure Firebase Admin SDK is initialized when Django starts
         try:
             import mysite.firebase_app
             logger.info("Firebase Admin SDK import attempt in UsersConfig.ready()")
@@ -20,7 +17,7 @@ class UsersConfig(AppConfig):
         except Exception as e:
             logger.error(f"Error during Firebase app initialization in UsersConfig.ready(): {e}")
 
-        # استيراد signals هنا لتجنب مشاكل الاستيراد الدائري وضمان تفعيل الإشارات
+        # Import signals to register them and avoid circular import issues
         try:
             import users.signals
             logger.info("Users app signals loaded successfully.")
