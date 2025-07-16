@@ -1,5 +1,6 @@
 # stores/models.py
 
+import uuid
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.core.validators import MinValueValidator, MaxValueValidator
@@ -79,7 +80,6 @@ class Store(models.Model):
     phone_number = models.CharField(_("Phone Number"), max_length=20, blank=True, null=True)
     email = models.EmailField(_("Email"), blank=True, null=True)
 
-    login_email = models.EmailField(_("Primary Login Email"), unique=True)
     tax_id = models.CharField(_("Tax ID"), max_length=50, unique=True, blank=True, null=True)
 
     store_type = models.ForeignKey(StoreType, on_delete=models.SET_NULL, null=True, blank=True, verbose_name=_("Store Type"))
@@ -112,13 +112,12 @@ class Store(models.Model):
 
 # --- Branch ---
 class Branch(models.Model):
+    branch_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     store = models.ForeignKey(Store, on_delete=models.CASCADE, related_name='branches', verbose_name=_("Store"))
     name = models.CharField(_("Branch Name"), max_length=255)
     address = models.TextField(_("Address"))
     phone_number = models.CharField(_("Phone Number"), max_length=20, blank=True, null=True)
     email = models.EmailField(_("Email"), blank=True, null=True)
-
-    branch_id_number = models.UUIDField(default=uuid4, unique=True, editable=False, verbose_name=_("Branch ID Number"))
     branch_tax_id = models.CharField(_("Branch Tax ID"), max_length=50, blank=True, null=True)
 
     manager_employee = models.OneToOneField(UserAccount, on_delete=models.SET_NULL, null=True, blank=True, related_name='managed_branch', verbose_name=_("Branch Manager Account"))
