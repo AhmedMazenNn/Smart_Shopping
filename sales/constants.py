@@ -27,9 +27,9 @@ class RefundMethod(models.TextChoices):
     EXCHANGE = 'EXCHANGE', _('Exchange')
 
 
-class ZatcaSubmissionStatus(models.TextChoices):
-    PENDING = 'PENDING', _('Pending ZATCA Submission')
-    SUBMITTED = 'SUBMITTED', _('Submitted to ZATCA')
-    ACCEPTED = 'ACCEPTED', _('ZATCA Accepted')
-    REJECTED = 'REJECTED', _('ZATCA Rejected')
-    FAILED = 'FAILED', _('ZATCA Submission Failed')
+# class ZatcaSubmissionStatus(models.TextChoices):
+#     PENDING = 'PENDING', _('Pending ZATCA Submission')
+#     SUBMITTED = 'SUBMITTED', _('Submitted to ZATCA')
+#     ACCEPTED = 'ACCEPTED', _('ZATCA Accepted')
+#     REJECTED = 'REJECTED', _('ZATCA Rejected')
+#     FAILED = 'FAILED', _('ZATCA Submission Failed')
